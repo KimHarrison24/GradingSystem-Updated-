@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura University Grading System</title>
+    <link rel="stylesheet" href="../css/gradingsheet.css">
+    <script src="../js/gradingsheet.js"></script>
+</head>
+<body onload="onloadEffect()">
+
+    <div class="form" id="form">
+
+        <center><h1>Student Grading Sheet</h1></center>
+
+        <fieldset class="fieldset1">
+            <legend>Student Information</legend>
+
+                <label for="batch">*Batch No.:</label>
+                    <select id="batch-no" class="batch-field" name="batch-opt" onfocus="focusMe(this)" onblur="blurMe(this)">
+                        <option value="0">-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+
+                <br>
+
+                <label for="name">Student Name:</label>
+                    <input id="first-name" class="name-field" type="text" placeholder="*First Name" onfocus="focusMe(this)" onblur="blurMe(this)">
+                    <input id="middle-name" class="name-field" type="text" placeholder="Middle Name" onfocus="focusMe(this)" onblur="blurMe(this)">
+                    <input id="surname-name" class="name-field" type="text" placeholder="*Surname" onfocus="focusMe(this)" onblur="blurMe(this)">
+
+                <br>
+
+                <label for="course">*Course:</label>
+                    <select id="course" class="course-field" name="course-opt" onfocus="focusMe(this)" onblur="blurMe(this)">
+                        <option value="0">-</option>
+                        <option value="1">DICT</option>
+                        <option value="2">IT</option>
+                    </select>
+                <label for="section">*Section:</label>
+                    <select id="section" class="section-field" name="section-opt" onfocus="focusMe(this)" onblur="blurMe(this)">
+                        <option value="0">-</option>
+                        <option value="1">21M1</option> 
+                        <option value="2">21M2</option> 
+                        <option value="3">21M3</option>
+                        <option value="4">22M1</option> 
+                        <option value="5">22M2</option> 
+                        <option value="6">22M3</option>
+                    </select>
+
+        </fieldset>
+
+        <fieldset class="fieldset1">
+            <legend>Student Grade Information</legend>
+
+                <select id="subject" class="subject-field" name="subject-opt" onfocus="focusMe(this)" onblur="blurMe(this)">
+                    <option value="0">-</option>
+                    <option value="1">Networking</option>
+                    <option value="2">Web System & Technologies</option> 
+                    <option value="3">Relational Database Management System</option> 
+                </select>
+                <br>
+                <center><label for="subject">*Subject</label></center>
+
+                <center>
+                    <label for="grade">*Term Grades:</label>
+                        <input id="prelim" class="grade-field" type="number" placeholder="Prelim" onfocus="focusMe(this)" onblur="blurMe(this)">
+                        <input id="midterm" class="grade-field" type="number" placeholder="Mid-Term" onfocus="focusMe(this)" onblur="blurMe(this)">
+                        <input id="final" class="grade-field" type="number" placeholder="Finals" onfocus="focusMe(this)" onblur="blurMe(this)">
+                </center>
+
+        </fieldset>
+
+        <center><input class="getBtn" type="submit" value="Get Grade Interpretation" onclick="getResult()"></center>
+
+    </div>
+
+</body>
+</html>
