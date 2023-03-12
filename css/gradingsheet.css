@@ -116,3 +116,353 @@ label {
     background-color: lavenderblush;
     color: deeppink;
 }
+
+.result-box {
+    position: absolute;
+    width: 100%;
+    height: 786px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transform: scale(0);
+}
+
+.result {
+    position: absolute;
+    cursor: default;
+    width: 850px;
+    height: 508px;
+    border-radius: 7.5px;
+    margin-left: 417.5px;
+    margin-top: 194.5px;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    padding-top: 12.5px;
+    border-top: 3px groove rgba(0, 0, 0, 0.75);
+    border-left: 3px groove rgba(0, 0, 0, 0.75);
+    border-right: 7.5px groove rgba(0, 0, 0, 0.75);
+    border-bottom: 7.5px groove rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 100px pink;
+    background-color: rgba(240, 153, 189, 0.85);
+}
+
+.stsj-info {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    padding-top: 10px;
+    border: 2.5px groove black;
+    box-shadow: -5.5px -5.5px  rgba(0, 0, 0, 0.45);
+    background-color: rgba(255, 203, 225, 0.75);
+}
+
+.left-side {
+    float: left;
+    width: 400px;
+    height: 190px;
+    margin-left: 7.5px;
+}
+
+.subject-code-dis {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.subject-dis {
+    position: absolute;
+    margin-top: 57.5px;
+    margin-left: 45px;
+}
+
+.prelim-indi {
+    position: absolute;
+    margin-top: 110.5px;
+    margin-left: 25px;
+}
+
+.prelim-dis {
+    position: absolute;
+    margin-top: 140.5px;
+    margin-left: 55.5px;
+}
+
+.midterm-indi {
+    position: absolute;
+    margin-top: 110.5px;
+    margin-left: 139.5px;
+}
+
+.midterm-dis {
+    position: absolute;
+    margin-top: 140.5px;
+    margin-left: 185.5px;
+}
+
+.final-indi {
+    position: absolute;
+    margin-top: 110.5px;
+    margin-left: 275.5px;
+}
+
+.final-dis {
+    position: absolute;
+    margin-top: 140.5px;
+    margin-left: 308.5px;
+}
+
+.right-side {
+    float: right;
+    width: 400px;
+    height: 135px;
+    border-radius: 37.5px;
+    padding-top: 10.5px;
+    padding-left: 10.5px;
+    padding-right: 16.5px;
+    margin-right: 7.5px;
+    margin-top: 20.5px;
+    border-top: 2px groove black;
+    border-left: 2px groove black;
+    border-right: 4.5px groove black;
+    border-bottom: 4.5px groove black;
+    background-color: rgba(255, 203, 225, 0.55);
+}
+
+.st-icon {
+    float: left;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 2.5px groove rgba(0, 0, 0, 0.25);
+}
+
+.st-info {
+    float: right;
+    width: 260px;
+    height: 105px;
+    margin-top: 7.5px;
+}
+
+.name-dis {
+    cursor: default;
+    width: 100%;
+    height: 25.5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.slvl-dis {
+    cursor: default;
+    width: 100%;
+    height: 25.5px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.grade-calculation {
+    float: left;
+    width: 420.5px;
+    height: 250px;
+    margin-top: 22.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: 2.5px groove black;
+    box-shadow: -5.5px -5.5px  rgba(0, 0, 0, 0.45);
+    background-color: rgba(255, 203, 225, 0.75);
+}
+
+.fieldset2-1 {
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 11.5px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 203, 225, 0.55);
+}
+
+.percent-indi {
+    position: absolute;
+    margin-top: 3.5px;
+    margin-left: 105.5px;
+}
+
+.scale-indi {
+    position: absolute;
+    margin-top: 3.5px;
+    margin-left: 264px;
+}
+
+.average-dis {
+    cursor: default;
+    width: 151.5px;
+    height: 25.5px;
+    margin-top: 32.5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.fieldset2-2 {
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10.5px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 203, 225, 0.35);
+}
+
+.left-ci {
+    float: left;
+}
+
+.green-ci {
+    background-color: rgba(0, 128, 0, 0.45);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.yellow-ci {
+    background-color: rgba(255, 255, 0, 0.45);
+    margin-bottom: 5px;
+}
+
+.right-ci {
+    float: right;
+}
+
+.yellow-green-ci {
+    background-color: rgba(153, 205, 50, 0.45);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.red-ci {
+    background-color: rgba(255, 0, 0, 0.45);
+    margin-bottom: 5px;
+}
+
+.remarks-dis {
+    cursor: default;
+    width: 100%;
+    height: 25.5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.graph-interpratation {
+    float: right;
+    width: 343.5px;
+    height: 250px;
+    margin-top: 22.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: 2.5px groove black;
+    box-shadow: -5.5px -5.5px  rgba(0, 0, 0, 0.45);
+    background-color: rgba(255, 203, 225, 0.75);
+}
+
+.absoluteOne {
+    position: absolute;
+}
+
+.graph-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bar-container {
+    float: left;
+    width: 263.5px;
+    height: 45px;
+    margin-right: 15px;
+}
+
+.bar-name {
+    float: right;
+    margin-top: 11.5px;
+}
+
+.prelim-bar {
+    width: 100%;
+    height: 45px;
+}
+
+.bar-pre {
+    float: left;
+    width: 1%;
+    height: 35.5px;
+    margin-top: 5.5px;
+    border-radius: 200px;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 255, 0.45);
+}
+
+.midterm-bar {
+    width: 100%;
+    height: 45px;
+}
+
+.bar-mid {
+    float: left;
+    width: 1%;
+    height: 35.5px;
+    margin-top: 5.5px;
+    border-radius: 200px;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 255, 0.45);
+}
+
+.final-bar {
+    width: 100%;
+    height: 45px;
+}
+
+.bar-fi {
+    float: left;
+    width: 1%;
+    height: 35.5px;
+    margin-top: 5.5px;
+    border-radius: 200px;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 255, 0.45);
+}
+
+.average-bar {
+    width: 100%;
+    height: 45px;
+}
+
+.bar-ave {
+    float: left;
+    width: 1%;
+    height: 35.5px;
+    margin-top: 5.5px;
+    border-radius: 200px;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 255, 0.45);
+}
+
+.graph-subject-name {
+    margin-top: 6.5px;
+}
