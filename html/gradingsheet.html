@@ -77,5 +77,112 @@
 
     </div>
 
+    <div class="result-box" id="rBox" onclick="closeWindow()">
+        <div class="result">
+
+            <div class="stsj-info">
+
+                <div class="left-side">
+
+                    <h1 id="subject-code-dis" class="subject-code-dis">SUBJECT CODE</h1>
+                        <h4 id="subject-dis" class="subject-dis">SUBJECT NAME</h4>
+
+                    <h4 class="prelim-indi">Prelim Grade:</h4>
+                    <h2 id="prelim-dis" class="prelim-dis">0</h2>
+                    <h4 class="midterm-indi">Mid-Term Grade:</h4>
+                    <h2 id="midterm-dis" class="midterm-dis">0</h2>
+                    <h4 class="final-indi">Finals Grade:</h4>
+                    <h2 id="final-dis" class="final-dis">0</h2>
+
+                </div>
+
+                <div class="right-side">
+
+                    <img class="st-icon" src="../img/st-icon.jpg">
+                    
+                    <div class="st-info">
+                        <center>
+                        <label for="name-dis">Student Full Name:</label>
+                        <input id="name-dis" class="name-dis" type="text" name="name" readonly>
+                        <br>
+                        <label for="slvl-dis">Student School Level:</label>
+                        <input id="slvl-dis" class="slvl-dis" type="text" name="lvl" readonly>
+                        </center>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="grade-calculation">
+
+                <fieldset class="fieldset2-1">
+                    <legend>Grade Average Report</legend>
+
+                    <h4 class="percent-indi">Percent (%)</h3>
+                    <h4 class="scale-indi">Scale (1-5)</h3>
+
+                    <label for="average">Average:</label>
+                    <input id="ave-percentage" class="average-dis" type="text" readonly>
+                    <input id="ave-scale" class="average-dis" type="text" readonly>
+
+                    <fieldset class="fieldset2-2">
+                        <legend>Legend</legend>
+                        
+                        <div class="left-ci">
+                            <center>
+                                <h6 class="green-ci">Green = "Passed (Highest Honor)"</h6>
+                                <h6 class="yellow-ci">Yellow = "Passed"</h6>
+                            </center>
+                        </div>
+                        
+                        <div class="right-ci">
+                            <center>
+                                <h6 class="yellow-green-ci">Yellow-Green = "Passed (Honor)"</h6>
+                                <h6 class="red-ci">Red = "Failed"</h6>
+                            </center>
+                        </div>
+
+                    </fieldset>
+
+                    <center><input id="remarks-dis" class="remarks-dis" type="text" placeholder="Remarks" readonly></center>
+
+                </fieldset>
+
+            </div>
+
+            <div class="graph-interpratation">
+
+                <div class="absoluteOne">
+                    <center><h4 class="graph-title">Graphical Representation</h4></center>
+
+                    <div class="prelim-bar">
+                        <div class="bar-container"> <div class="bar-pre" id="bar-pre"></div> </div>
+                        <div class="bar-name"> <h4>Prelim</h4> </div>
+                    </div>
+
+                    <div class="midterm-bar">
+                        <div class="bar-container"> <div class="bar-mid" id="bar-mid"></div> </div>
+                        <div class="bar-name"> <h4>Mid-Term</h4> </div>
+                    </div>
+
+                    <div class="final-bar">
+                        <div class="bar-container"> <div class="bar-fi" id="bar-fi"></div> </div>
+                        <div class="bar-name"> <h4>Finals</h4> </div>
+                    </div>
+
+                    <div class="average-bar">
+                        <div class="bar-container"> <div class="bar-ave" id="bar-ave"></div> </div>
+                        <div class="bar-name"> <h4>Average</h4> </div>
+                    </div>
+                
+                    <center><h6 class="graph-subject-name" id="graph-subject-name">Subject Name</h6></center>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
