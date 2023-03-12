@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.form {
+    position: absolute;
+    cursor: default;
+    width: 750px;
+    height: 408px;
+    margin-left: 469.5px;
+    margin-top: 249.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 7.5px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    border-top: 3px groove rgba(0, 0, 0, 0.75);
+    border-left: 3px groove rgba(0, 0, 0, 0.75);
+    border-right: 7.5px groove rgba(0, 0, 0, 0.75);
+    border-bottom: 7.5px groove rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 100px pink;
+    background-color: rgba(240, 153, 189, 0.875);
+}
+
+.fieldset1 {
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 203, 225, 0.35);
+}
+
+label {
+    font-weight: 600;
+}
+
+.batch-field {
+    cursor: pointer;
+    width: 50.5px;
+    height: 25.5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 29px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.name-field {
+    width: 191.5px;
+    height: 25.5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.course-field {
+    cursor: pointer;
+    width: 193.5px;
+    height: 25.5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 49px;
+    margin-right: 78.5px;
+    margin-bottom: 15px;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.section-field {
+    cursor: pointer;
+    width: 194.5px;
+    height: 25.5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 49px;
+    margin-bottom: 15px;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.subject-field {
+    cursor: pointer;
+    width: 100%;
+    height: 25.5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.grade-field {
+    width: 195.5px;
+    height: 25.5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.getBtn {
+    cursor: pointer;
+    width: 215.5px;
+    height: 35.5px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.getBtn:hover {
+    background-color: lavenderblush;
+    color: deeppink;
+}
