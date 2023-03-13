@@ -10,6 +10,11 @@
 </head>
 <body onload="onloadEffect()">
 
+    <img class="background-img" src="../img/bg1.jpg">
+    <div class="bg-overlay"></div>
+
+    <img class="webpage-logo" src="../img/logo.png">
+
     <div class="form" id="form">
 
         <center><h1>Student Grading Sheet</h1></center>
@@ -179,9 +184,35 @@
                     <center><h6 class="graph-subject-name" id="graph-subject-name">Subject Name</h6></center>
                 </div>
 
+                <div id="graph-loading-icon" class="graph-loading-icon-container">
+                    <img class="graph-loading-icon" src="../img/loading-icon.gif">
+                </div>
+
             </div>
 
         </div>
+    </div>
+
+    <div id="loading-icon" class="loading-icon-container">
+        <img class="loading-icon" src="../img/cherry-blossom-loading-icon.gif">
+    </div>
+
+    <div class="welcome-message-box bottom-up-slide" id="wMes-box">
+        
+            <div class="message-box-content">
+                <div class="closeBtn-box">
+                    <h2 class="closeWm-btn" onclick="closeMessageBox()">x</h2>
+                </div>
+
+                <center>
+                    <fieldset class="welcome-message-fieldset">
+                        <h1 class="welcome-message">-よこそ みんなさん!-</h1>
+                        <h4 class="welcome-message">"NOTE: All of the Images(Jpg, Png, Gif) are all get in the Internet"</h4>
+                        <h3 class="welcome-message">"CREDITS TO THEIR RESPECTFUL OWNERS"</h3>
+                    </fieldset>
+                </center>
+            </div>
+
     </div>
 
 </body>
