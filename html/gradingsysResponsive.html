@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/shortcut-logo.png">
+    <title>Sakura University Grading System</title>
+    <link rel="stylesheet" href="../css/gradingsysResponsive.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/gradingsysResponsive.js"></script>
+</head>
+<body onload="onloadEffect()">
+
+    <div class="container-fluid background-img p-0">
+        <div class="container-fluid bg-overlay m-0">
+            <div class="container-fluid onload-bg-image m-0 pb-5">
+            
+            <div class="row-cols-4">
+                <img class="webpage-logo" src="../img/logo.png">
+            </div>
+
+            <div class="row-cols-1 mt-5 position-relative">
+                <div class="container-md p-0">
+
+                    <div class="container-md form" id="form">
+                        <center><h3 class="mt-2">Grading Sheet Form</h3></center>
+
+                        <fieldset class="fieldset1">
+                            <h6 class="mt-1 mb-2">Student Personal Info</h6>
+
+                            <div class="row g-2 mb-3">
+                                <div class="col-md-4">
+                                    <label for="first-name" class="form-label">*First name:</label>
+                                    <input type="text" class="name-field" id="first-name" onfocus="focusMe(this)" onblur="blurMeTextValidation(this)">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="middle-name" class="form-label">Middle name:</label>
+                                    <input type="text" class="name-field" id="middle-name" onfocus="focusMe(this)" onblur="blurMeNotRequired(this)">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="surname-name" class="form-label">*Last name:</label>
+                                    <input type="text" class="name-field" id="surname-name" onfocus="focusMe(this)" onblur="blurMeTextValidation(this)">
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="batch-no" class="form-label">*Batch No.:</label>
+                                    <select class="batch-field" id="batch-no" onfocus="focusMe(this)" onblur="blurMeOptionValidation(this)">
+                                        <option value="0">-</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="course" class="form-label">*Course:</label>
+                                    <select class="course-field" id="course" onfocus="focusMe(this)" onblur="blurMeOptionValidation(this)">
+                                        <option value="0">-</option>
+                                        <option value="1">DICT</option>
+                                        <option value="2">IT</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="section" class="form-label">*Section:</label>
+                                    <select class="section-field" id="section" onfocus="focusMe(this)" onblur="blurMeOptionValidation(this)">
+                                        <option value="0">-</option>
+                                        <option value="1">21M1</option> 
+                                        <option value="2">21M2</option> 
+                                        <option value="3">21M3</option>
+                                        <option value="4">22M1</option> 
+                                        <option value="5">22M2</option> 
+                                        <option value="6">22M3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset class="fieldset1">
+                            <h6 class="mt-1 mb-2">Student Grade Info</h6>
+
+                            <div class="row g-2 mb-3">
+                                <div class="col-12">
+                                    <select class="subject-field" id="subject" onfocus="focusMe(this)" onblur="blurMeOptionValidation(this)">
+                                        <option value="0">-</option>
+                                        <option value="1">Networking</option>
+                                        <option value="2">Web System & Technologies</option> 
+                                        <option value="3">Relational Database Management System</option> 
+                                    </select>
+                                </div>
+
+                                <div class="col-12 mt-0 mb-0">
+                                    <center><label for="section" class="form-label">*Subject</label></center>
+                                </div>
+
+                                <div class="col-md-4 mt-0">
+                                    <label for="prelim" class="form-label">*Prelim:</label>
+                                   <input type="number" class="grade-field" id="prelim" placeholder="60 ~ 100" onfocus="focusMe(this)" onblur="blurMeRangeValidation(this)">
+                                </div>
+
+                                <div class="col-md-4 mt-0">
+                                    <label for="midterm" class="form-label">*Mid-Term:</label>
+                                    <input type="number" class="grade-field" id="midterm" placeholder="60 ~ 100" onfocus="focusMe(this)" onblur="blurMeRangeValidation(this)">
+                                </div>
+
+                                <div class="col-md-4 mt-0">
+                                    <label for="final" class="form-label">*Finals:</label>
+                                    <input type="number" class="grade-field" id="final" placeholder="60 ~ 100" onfocus="focusMe(this)" onblur="blurMeRangeValidation(this)">
+                                </div>
+                            </div>
+
+                        </fieldset>
+
+                        <center><button type="button" id="btnMe" class="btn-lg mt-0 mb-2 getBtn" onclick="getResult()">Get Grade Result</button></center>
+                    </div>
+
+                    <div class="container-md position-absolute top-0 m-0 result-box" id="rBox" onclick="closeWindow()">
+                        
+                        <div class="row p-3"> 
+                            <div class="container-md stsj-info">
+                                <div class="row g-2 p-2">
+                                    <div class="col-md-6 mt-4">
+                                        <div class="row-cols-md-1 m-0 ps-0 pe-0 pt-1">
+                                            <h2 class="subject-code-dis" id="subject-code-dis">Sub-Code</h2>
+                                        </div>
+
+                                        <div class="row-cols-md-1 m-0 p-0">
+                                            <h5 class="subject-dis" id="subject-dis">Sub-Name</h5>
+                                        </div>
+
+                                        <div class="row g-2 mt-3 text-center">
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <h6 class="grade-dis-indi">Prelim Grade:</h5>
+                                                </div>
+                                                
+                                                <div class="row">
+                                                    <h6 class="grade-dis-indi" id="prelim-dis">0</h5>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <h6 class="grade-dis-indi">Midterm Grade:</h5>
+                                                </div>
+                                                
+                                                <div class="row">
+                                                    <h6 class="grade-dis-indi" id="midterm-dis">0</h5>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <h6 class="grade-dis-indi">Finals Grade:</h5>
+                                                </div>
+                                                
+                                                <div class="row">
+                                                    <h6 class="grade-dis-indi" id="final-dis">0</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-md-6 st-info">
+                                        <div class="container-md">
+                                            <div class="row p-2">
+                                            <div class="col-md-3 p-0 m-0 d-flex justify-content-center">
+                                                <img class="st-icon" src="../img/st-icon.jpg">
+                                            </div>
+                                            <div class="col-md-9 ps-0 pe-0 m-0 text-center">
+                                                <div class="row p-2">
+                                                    <div class="row-cols-1">
+                                                        <label for="first-name" class="form-label">Student Fullname:</label>
+                                                    </div>
+
+                                                    <div class="row-cols-1">
+                                                        <input type="text" class="form-control name-field" id="name-dis" readonly>
+                                                    </div>
+
+                                                    <div class="row-cols-1 mt-2">
+                                                        <label for="first-name" class="form-label">Student School Level:</label>
+                                                    </div>
+
+                                                    <div class="row-cols-1">
+                                                        <input type="text" class="form-control name-field" id="slvl-dis" readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row ps-3 pe-3 pb-3 g-3">
+                            <div class="col-md-6 ps-0">
+                                <div class="container-md ms-0 grade-calculation-interpretation">
+
+                                    <fieldset class="fieldset2">
+                                        <h6 class="mt-1 mb-2">Grade Average Report</h6>
+
+                                        <div class="row g-2 mb-3 text-center">
+                                            <div class="col-4">
+                                                <!--Nothing here, just for space!-->
+                                            </div>
+
+                                            <div class="col-4">
+                                                <label>(%)</label>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <label>(1-5)</label>
+                                            </div>
+
+                                            <div class="col-4 pt-2">
+                                                <label>Average:</label>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <input type="text" class="average-remarks-dis" id="ave-percentage" readonly>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <input type="text" class="average-remarks-dis" id="ave-scale" readonly>
+                                            </div>
+                                        </div>
+
+                                        <fieldset class="fieldset3">
+                                            <h6 class="mt-1 mb-2">Color Guide</h6>
+
+                                            <div class="row g-2 mb-3 text-center">
+                                                <div class="col-md-6 high-honor">
+                                                    <label>Passed (Highest Honor)</label>
+                                                </div>
+    
+                                                <div class="col-md-6 honor">
+                                                    <label>Passed (Honor)</label>
+                                                </div>
+    
+                                                <div class="col-md-6 passed">
+                                                    <label>Passed</label>
+                                                </div>
+    
+                                                <div class="col-md-6 failed">
+                                                    <label>Failed</label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+
+                                        <div class="row-cols-1 mt-2 mb-2">
+                                            <input type="text" class="average-remarks-dis" id="remarks-dis" readonly>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 pe-0">
+                                <div class="container-md p-0 grade-calculation-interpretation position-relative">
+                                    <div class="row-cols-1 p-2 text-center">
+                                        <label>Graphical Representation</label>
+                                    </div>
+
+                                    <div class="row mb-2">
+                                        <div class="col-md-10 ps-4 pe-4">
+                                            <div class="graph-bar" id="bar-pre"></div>
+                                        </div>
+
+                                        <div class="col-md-2 pt-2 ps-3">
+                                            <label>Prelim</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-2">
+                                        <div class="col-md-10 ps-4 pe-4">
+                                            <div class="graph-bar" id="bar-mid"></div>
+                                        </div>
+
+                                        <div class="col-md-2 pt-2 ps-3">
+                                            <label>Midterm</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-2">
+                                        <div class="col-md-10 ps-4 pe-4">
+                                            <div class="graph-bar" id="bar-fi"></div>
+                                        </div>
+
+                                        <div class="col-md-2 pt-2 ps-3">
+                                            <label>Finals</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-2">
+                                        <div class="col-md-10 ps-4 pe-4">
+                                            <div class="graph-bar" id="bar-ave"></div>
+                                        </div>
+
+                                        <div class="col-md-2 pt-2 ps-3">
+                                            <label>Average</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row-cols-1 p-2 mt-1 text-center">
+                                        <label id="graph-subject-name">Sub-Name</label>
+                                    </div>
+
+                                    <div id="graph-loading-icon" class="container-md position-absolute top-0 graph-loading-icon-container">
+                                        <img class="graph-loading-icon" src="../img/loading-icon.gif">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="loading-icon" class="container-md position-absolute top-0 loading-icon-container">
+                        <img class="loading-icon" src="../img/cherry-blossom-loading-icon.gif">
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="wMes-box">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="--modal-content message-box-content">
+                    <div class="modal-header border-dark">
+                      <h5 class="modal-title">Onload Welcome Message</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <strong> 
+                            -よこそ みんなさん!-
+                            <br>
+                            "NOTE: All of the Images, Gif's are all get in the Internet"
+                            <br>
+                            "CREDITS TO THEIR RESPECTFUL OWNERS"
+                        </strong>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

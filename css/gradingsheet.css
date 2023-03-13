@@ -1,6 +1,12 @@
+@font-face {
+    font-family: Londinia-Medium;
+    src: url(../font/LondiniaMedium.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-family: Londinia-Medium;
     overflow: hidden;
 }
 

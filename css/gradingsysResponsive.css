@@ -1,0 +1,290 @@
+@font-face {
+    font-family: Londinia-Medium;
+    src: url(../font/LondiniaMedium.ttf);
+}
+
+* {
+    font-family: Londinia-Medium;
+}
+
+.background-img {
+    background-image: url(../img/bg1.jpg);
+    background-size: 100% 100%;
+}
+
+.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.onload-bg-image {
+    background-image: url(../img/falling-sakura.gif);
+}
+
+.webpage-logo {
+    width: 25%;
+    height: 25%;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.form {
+    cursor: default;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 7.5px;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    border-top: 3px groove rgba(0, 0, 0, 0.75);
+    border-left: 3px groove rgba(0, 0, 0, 0.75);
+    border-right: 7.5px groove rgba(0, 0, 0, 0.75);
+    border-bottom: 7.5px groove rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 100px pink;
+    background-color: rgba(240, 153, 189, 0.875);
+}
+
+.fieldset1 {
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 203, 225, 0.35);
+}
+
+label {
+    font-weight: 600;
+}
+
+.name-field {
+    width: 100%;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.batch-field {
+    cursor: pointer;
+    width: 100%;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.course-field {
+    cursor: pointer;
+    width: 100%;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.section-field {
+    cursor: pointer;
+    width: 100%;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.subject-field {
+    cursor: pointer;
+    width: 100%;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.grade-field {
+    width: 100%;
+    height: 43px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.getBtn {
+    cursor: pointer;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.getBtn:hover {
+    background-color: lavenderblush;
+    color: deeppink;
+}
+
+.result-box {
+    cursor: default;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 7.5px;
+    border-top: 3px groove rgba(0, 0, 0, 0.75);
+    border-left: 3px groove rgba(0, 0, 0, 0.75);
+    border-right: 7.5px groove rgba(0, 0, 0, 0.75);
+    border-bottom: 7.5px groove rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 100px pink;
+    background-color: rgba(240, 153, 189, 0.875);
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transform: scale(0);
+}
+
+.stsj-info {
+    border-radius: 5px;
+    border: 2.5px groove black;
+    box-shadow: -5.5px -5.5px  rgba(0, 0, 0, 0.45);
+    background-color: rgba(255, 203, 225, 0.65);
+}
+
+.subject-code-dis {
+    font-weight: bolder;
+    margin-left: 1%;
+}
+
+.subject-dis {
+    font-weight: bolder;
+    font-size: 100%;
+    margin-left: 4%;
+}
+
+.grade-dis-indi {
+    font-weight: bolder;
+}
+
+.st-icon {
+    position: relative;
+    width: 80%;
+    height: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 100%;
+    border: 2.5px groove rgba(0, 0, 0, 0.25);
+}
+
+.st-info {
+    border-radius: 37.5px;
+    border-top: 2px groove black;
+    border-left: 2px groove black;
+    border-right: 4.5px groove black;
+    border-bottom: 4.5px groove black;
+    background-color: rgba(255, 203, 225, 0.55);
+}
+
+.grade-calculation-interpretation {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    border: 2.5px groove black;
+    box-shadow: -5.5px -5.5px  rgba(0, 0, 0, 0.45);
+    background-color: rgba(255, 203, 225, 0.65);
+}
+
+.fieldset2 {
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgba(255, 203, 225, 0.85);
+}
+
+.fieldset3 {
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.average-remarks-dis {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: rgba(230, 230, 250, 0.85);
+}
+
+.high-honor {
+    background-color: rgba(0, 128, 0, 0.45);
+    border: 1px solid black;
+}
+
+.honor {
+    background-color: rgba(153, 205, 50, 0.45);
+    border: 1px solid black;
+}
+
+.passed {
+    background-color: rgba(255, 255, 0, 0.45);
+    border: 1px solid black;
+}
+
+.failed {
+    background-color: rgba(255, 0, 0, 0.45);
+    border: 1px solid black;
+}
+
+.graph-bar {
+    width: 1%;
+    height: 50.5px;
+    margin-bottom: 0.5px;
+    border-radius: 200px;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 255, 0.45);
+}
+
+.loading-icon-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 7.5px;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: none;
+}
+
+.loading-icon {
+    width: 125px;
+    height: 125px;
+    margin: auto;
+}
+
+.graph-loading-icon-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 7.5px;
+    display: none;
+}
+
+.graph-loading-icon {
+    width: 125px;
+    height: 125px;
+    margin: auto;
+}
+
+.message-box-content {
+    border-radius: 10.5px;
+    border-top: 3px groove rgba(0, 0, 0, 0.75);
+    border-left: 3px groove rgba(0, 0, 0, 0.75);
+    border-right: 7.5px groove rgba(0, 0, 0, 0.75);
+    border-bottom: 7.5px groove rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 100px pink;
+    background-color: rgba(240, 153, 189, 0.875);
+}
